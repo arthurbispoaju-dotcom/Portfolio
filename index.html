@@ -20,7 +20,7 @@
 
   /* ▼ TROQUE AQUI SUAS IMAGENS (coloque os arquivos na mesma pasta do HTML) */
   --hero-img: none;   /* ex.: url('mesa.jpg') */
-  --foto: none;       /* ex.: url('foto.jpg') */
+  --foto: url('foto.jpg');
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
@@ -99,8 +99,12 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .portrait {
   position: relative; min-height: 420px;
   background:
-    linear-gradient(90deg, var(--panel) 0%, transparent 35%),
-    var(--foto) center top/cover no-repeat,
+    linear-gradient(90deg, var(--panel) 0%, rgba(18,23,32,.55) 22%, transparent 50%),
+    linear-gradient(270deg, #0e1218 0%, transparent 22%),
+    linear-gradient(0deg, #0e1218 0%, transparent 28%),
+    linear-gradient(180deg, #10151d 0%, transparent 12%),
+    linear-gradient(rgba(11,14,19,.18), rgba(11,14,19,.18)),
+    var(--foto) center 20%/cover no-repeat,
     radial-gradient(ellipse 45% 55% at 55% 45%, #232b37, transparent 70%);
   display: grid; place-items: center;
 }
@@ -168,7 +172,7 @@ footer .wrap { padding-block: 28px; display: flex; justify-content: space-betwee
   .hero { min-height: 560px; }
   .about .wrap { grid-template-columns: 1fr; gap: 0; min-height: 0; }
   .about-text { padding-block: 60px 30px; }
-  .portrait { min-height: 340px; background: var(--foto) center top/cover no-repeat, radial-gradient(ellipse 45% 55% at 50% 45%, #232b37, transparent 70%); }
+  .portrait { min-height: 420px; border-radius: 4px; background: linear-gradient(0deg, #0e1218 0%, transparent 30%), var(--foto) center 20%/cover no-repeat, radial-gradient(ellipse 45% 55% at 50% 45%, #232b37, transparent 70%); }
   .resume .wrap, .resume .col:last-child { grid-template-columns: 1fr; }
   .grid { grid-template-columns: 1fr; }
 }
@@ -260,7 +264,7 @@ footer .wrap { padding-block: 28px; display: flex; justify-content: space-betwee
   <div class="social">
     <div class="wrap">
       <!-- Troque o "#" pelos links dos seus perfis -->
-      <a href="#">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/arthurbisposalesforce/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://github.com/arthurbispoaju-dotcom" target="_blank" rel="noopener">GitHub</a>
       <a href="https://wa.me/5579996302389" target="_blank" rel="noopener">WhatsApp</a>
     </div>
@@ -278,8 +282,6 @@ footer .wrap { padding-block: 28px; display: flex; justify-content: space-betwee
       <p class="place">Aracaju, Sergipe<br>Brasil</p>
     </div>
     <div class="portrait" role="img" aria-label="Foto de Arthur Bispo">
-      <!-- Some quando você definir --foto lá no CSS -->
-      <span class="initials" aria-hidden="true">AB</span>
     </div>
   </div>
 </section>
