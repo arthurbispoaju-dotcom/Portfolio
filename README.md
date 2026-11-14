@@ -21,6 +21,16 @@ Nasceu da minha rotina na assessoria da Vice-Prefeita de São Cristóvão, onde 
 
 👉 [Abrir o Despacho](https://arthurbispoaju-dotcom.github.io/Portfolio/despacho.html)
 
+### Inducción PESV · Segurança Viária na Colômbia
+Apresentação interativa em espanhol, feita para David Pérez (Consultor SST, Colômbia), para a indução obrigatória do Plano Estratégico de Segurança Viária.
+
+- 10 telas com identidade visual de sinalização viária
+- Cada exigência ligada à norma de origem (Resolución 40595 de 2022, Ley 1503 de 2011, Decreto 1072 de 2015)
+- Navegação por teclado, tela cheia e modo paisagem no celular
+- QR codes de contato do consultor
+
+👉 [Ver a apresentação](https://arthurbispoaju-dotcom.github.io/Portfolio/pesv-colombia.html)
+
 ### MH Produções Audiovisual
 Site institucional de uma produtora de Aracaju especializada em cobertura de eventos, filmagem, fotografia e transmissões ao vivo.
 
@@ -51,12 +61,14 @@ Apresentação interativa em HTML com 40 telas para um treinamento obrigatório 
 ## Estrutura do repositório
 
 ```
-├── index.html      # Portfólio
-├── despacho.html   # Sistema Despacho
-└── foto.jpg        # Foto da seção Sobre
+├── index.html          # Portfólio
+├── despacho.html       # Sistema Despacho
+├── pesv-colombia.html  # Apresentação Inducción PESV (Colômbia)
+├── foto.jpg            # Foto da seção Sobre
+└── img/                # Capas dos projetos
 ```
 
-Os dois sites são páginas estáticas, sem dependências nem etapa de build. Para rodar localmente, é só abrir o `index.html` no navegador. A publicação é feita pelo GitHub Pages a partir da branch `main`.
+Todas as páginas são páginas estáticas, sem dependências nem etapa de build. Para rodar localmente, é só abrir o `index.html` no navegador. A publicação é feita pelo GitHub Pages a partir da branch `main`.
 
 ## Contato
 
